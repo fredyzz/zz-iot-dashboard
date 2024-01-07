@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import { createUser } from "../../../core/users/application/create/createUser";
-import { getAllUsers } from "../../../core/users/application/getAll/getAllUsers";
-import { User } from "../../../core/users/domain/User";
-import { UserRepository } from "../../../core/users/domain/UserRepository";
+import { createUser } from "../../core/users/application/create/createUser";
+import { getAllUsers } from "../../core/users/application/getAll/getAllUsers";
+import { User } from "../../core/users/domain/User";
+import { UserRepository } from "../../core/users/domain/UserRepository";
 
 export interface ContextState {
 	users: User[];

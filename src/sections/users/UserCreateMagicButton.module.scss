@@ -1,0 +1,16 @@
+.userCreateMagicButton {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}

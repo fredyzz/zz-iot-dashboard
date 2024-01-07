@@ -1,6 +1,6 @@
-import { useUsersContext } from "./Context";
 import { UserCard } from "./UserCard";
 import styles from "./UserList.module.scss";
+import { useUsersContext } from "./UsersContext";
 
 export function UserList() {
 	const { users } = useUsersContext();

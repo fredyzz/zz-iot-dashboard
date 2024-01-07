@@ -1,5 +1,5 @@
-import { useUsersContext } from "./Context";
 import styles from "./UserCreateMagicButton.module.scss";
+import { useUsersContext } from "./UsersContext";
 
 const NAMES_LIST = ["John", "Jane", "Mary", "Peter", "Paul", "Mark", "Luke", "Matthew"];
 

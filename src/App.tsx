@@ -1,7 +1,7 @@
 import { createLocalStorageUserRepository } from "./core/users/infraestructure/LocalStorageUserRepository";
-import { UsersContextProvider } from "./sections/users/Context";
 import UserCreateMagicButton from "./sections/users/UserCreateMagicButton";
 import { UserList } from "./sections/users/UserList";
+import { UsersContextProvider } from "./sections/users/UsersContext";
 
 export function App() {
 	const usersRepository = createLocalStorageUserRepository();

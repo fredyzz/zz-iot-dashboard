@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://fredyzz.github.io/react-typescript-DDD-template/",
   "dependencies": {
+    "firebase": "^10.7.1",
+    "firebase-tools": "^13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -19,7 +21,7 @@
     "lint": "eslint --ignore-path .gitignore . && stylelint **/*.scss",
     "lint:fix": "eslint --fix --ignore-path .gitignore . && stylelint --fix **/*.scss",
     "ghpages:predeploy": "npm run build",
-    "ghpages:deploy": "gh-pages -d build" 
+    "ghpages:deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

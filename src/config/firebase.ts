@@ -4,8 +4,6 @@ import {
 	getAuth,
 	NextOrObserver,
 	onAuthStateChanged,
-	signInWithEmailAndPassword,
-	signOut,
 	User,
 	UserCredential,
 } from "firebase/auth";
@@ -25,20 +23,6 @@ export const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app);
 
-export const signInUser = async ({
-	email,
-	password,
-}: {
-	email: string;
-	password: string;
-}): Promise<UserCredential | null> => {
-	if (!email && !password) {
-		return null;
-	}
-
-	return await signInWithEmailAndPassword(auth, email, password);
-};
-
 export const createUser = async (
 	email: string,
 	password: string,
@@ -53,5 +37,3 @@ export const createUser = async (
 export const userStateListener = (callback: NextOrObserver<User>): (() => void) => {
 	return onAuthStateChanged(auth, callback);
 };
-
-export const signOutUser = async (): Promise<void> => await signOut(auth);

@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { signIn as signInUser, signOut as signOutUser } from "services/auth/index";
-import { User } from "services/auth/types";
 
 import { userStateListener } from "../../config/firebase";
+import { signIn as signInUser, signOut as signOutUser } from "../../services/auth/index";
+import { User } from "../../services/auth/types";
 
 export interface ContextState {
 	currentUser: User | null;

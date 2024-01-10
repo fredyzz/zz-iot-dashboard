@@ -1,6 +1,7 @@
-import { auth } from "config/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import type { UserCredential } from "services/auth/types";
+
+import { auth } from "../../config/firebase";
+import type { UserCredential } from "../../services/auth/types";
 
 export async function signIn(email: string, password: string): Promise<UserCredential | null> {
 	if (!email && !password) {

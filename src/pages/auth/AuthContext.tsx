@@ -1,17 +1,12 @@
-import { User, UserCredential } from "firebase/auth";
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { signIn as signInUser, signOut as signOutUser } from "services/auth/index";
+import { User } from "services/auth/types";
 
-import { signInUser, signOutUser, userStateListener } from "../../firebase";
+import { userStateListener } from "../../config/firebase";
 
 export interface ContextState {
 	currentUser: User | null;
-	signIn: ({
-		email,
-		password,
-	}: {
-		email: string;
-		password: string;
-	}) => Promise<UserCredential | null>;
+	signIn: (email: string, password: string) => Promise<User | null>;
 	signOut: () => Promise<void>;
 }
 
@@ -21,17 +16,18 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
 	const [currentUser, setCurrentUser] = useState<User | null>(null);
 
 	const signOut = async () => {
-		await signOutUser();
 		setCurrentUser(null);
+
+		return signOutUser();
 		/////// navigate('/')
 	};
 
-	const signIn = async ({ email, password }: { email: string; password: string }) => {
-		const userCredentials = await signInUser({ email, password });
-		if (userCredentials) {
-			setCurrentUser(userCredentials.user);
+	const signIn = async (email: string, password: string) => {
+		const userCredential = await signInUser(email, password);
+		if (userCredential?.user) {
+			setCurrentUser(userCredential.user);
 
-			return userCredentials;
+			return userCredential.user;
 		}
 
 		return null;

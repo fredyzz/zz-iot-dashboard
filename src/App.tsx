@@ -1,19 +1,13 @@
-import { createLocalStorageUserRepository } from "./core/users/infraestructure/LocalStorageUserRepository";
-import UserCreateMagicButton from "./sections/users/UserCreateMagicButton";
-import { UserList } from "./sections/users/UserList";
-import { UsersContextProvider } from "./sections/users/UsersContext";
+import { AuthContextProvider } from "./pages/auth/AuthContext";
+import { AuthStatus } from "./pages/auth/AuthStatus";
 
 export function App() {
-	const usersRepository = createLocalStorageUserRepository();
-
 	return (
-		<UsersContextProvider repository={usersRepository}>
+		<AuthContextProvider>
 			<div className="App">
-				<h1>React template - Typescript, Hexagonal Architecture & DDD</h1>
-				<h2>Current users</h2>
-				<UserCreateMagicButton />
-				<UserList />
+				<h1>ZZ Iot Dashboard</h1>
+				<AuthStatus />
 			</div>
-		</UsersContextProvider>
+		</AuthContextProvider>
 	);
 }

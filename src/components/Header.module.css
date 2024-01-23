@@ -1,0 +1,11 @@
+@import "../styles/globals.css";
+
+.header {
+  height: var(--header-height);
+  background-color: #f5f5f5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}

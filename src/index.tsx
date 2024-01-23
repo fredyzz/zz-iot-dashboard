@@ -1,4 +1,4 @@
-import "./assets/styles/sakura.scss";
+import "./styles/sakura.scss";
 
 import React from "react";
 import ReactDOM from "react-dom/client";

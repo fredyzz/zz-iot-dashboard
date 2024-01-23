@@ -1,0 +1,8 @@
+@import "../styles/globals.css";
+
+.content {
+  margin-top: var(--header-height);
+  margin-left: calc(16px + 250px);
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}

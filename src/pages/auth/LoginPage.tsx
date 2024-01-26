@@ -2,10 +2,10 @@ import { useEffect } from "react";
 
 import { useAuthContext } from "./AuthContext";
 
-export function AuthStatus() {
+export function LoginPage() {
 	const authContext = useAuthContext();
 	// eslint-disable-next-line no-console
-	console.log(authContext);
+	console.log("authContext", authContext);
 
 	// leopoldo.a.zimperz@gmail.com
 	// merda123
@@ -23,5 +23,5 @@ export function AuthStatus() {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	return <div>AuthStatus</div>;
+	return <div>LoginPage</div>;
 }

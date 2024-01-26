@@ -6,6 +6,7 @@ import { User } from "../../services/auth/types";
 
 export interface ContextState {
 	currentUser: User | null;
+	loading: boolean;
 	signIn: (email: string, password: string) => Promise<User | null>;
 	signOut: () => Promise<void>;
 }
@@ -13,6 +14,7 @@ export interface ContextState {
 export const AuthContext = createContext({} as ContextState);
 
 export const AuthContextProvider = ({ children }: { children: React.ReactNode }) => {
+	const [loading, setLoading] = useState(true);
 	const [currentUser, setCurrentUser] = useState<User | null>(null);
 
 	const signOut = async () => {
@@ -35,6 +37,7 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
 
 	useEffect(() => {
 		const unsubscribe = userStateListener((user) => {
+			setLoading(false);
 			if (user) {
 				setCurrentUser(user);
 			}
@@ -44,7 +47,9 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
-		<AuthContext.Provider value={{ currentUser, signIn, signOut }}>{children}</AuthContext.Provider>
+		<AuthContext.Provider value={{ currentUser, loading, signIn, signOut }}>
+			{children}
+		</AuthContext.Provider>
 	);
 };
 

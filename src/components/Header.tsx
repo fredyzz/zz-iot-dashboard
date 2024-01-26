@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
 
 export function Header() {
-	return <div className={styles.header}> header content </div>;
+	return <div className={styles.header}>ZZ iOT Dashboard</div>;
 }

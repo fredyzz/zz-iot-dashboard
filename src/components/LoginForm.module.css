@@ -1,0 +1,11 @@
+.loginForm {
+  max-width: 400px;
+}
+
+.passwordSignIn,
+.socialSignIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

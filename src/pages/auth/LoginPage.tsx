@@ -12,7 +12,10 @@ export function LoginPage() {
 	useEffect(() => {
 		const signInAndHandleErrors = async () => {
 			try {
-				await authContext.signIn("leopoldo.a.zimperz@gmail.com", "merda123");
+				await authContext.signIn(
+					process.env.REACT_APP_TEST_USER_EMAIL ?? "",
+					process.env.REACT_APP_TEST_USER_PASSWORD ?? "",
+				);
 			} catch (error) {
 				// Handle error here
 			}

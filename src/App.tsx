@@ -1,11 +1,16 @@
+import "@fontsource/open-sans";
+
+import { ChakraProvider } from "@chakra-ui/react";
 import { Router } from "components/Router";
 
-import { AuthContextProvider } from "./pages/auth/AuthContext";
+import { AuthContextProvider } from "./contexts/AuthContext";
 
 export function App() {
 	return (
-		<AuthContextProvider>
-			<Router />
-		</AuthContextProvider>
+		<ChakraProvider>
+			<AuthContextProvider>
+				<Router />
+			</AuthContextProvider>
+		</ChakraProvider>
 	);
 }

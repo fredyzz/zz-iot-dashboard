@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-typescript-DDD-template/static/css/main.615c04db.css",
+    "main.js": "/react-typescript-DDD-template/static/js/main.d15557ae.js",
+    "static/media/open-sans-latin-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-latin-400-normal.2e11868c8988e285301c.woff2",
+    "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-cyrillic-ext-400-normal.bc843a7cafaf78645470.woff2",
+    "static/media/open-sans-latin-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-latin-400-normal.b066e99ba03f7b4bd514.woff",
+    "static/media/open-sans-cyrillic-ext-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-cyrillic-ext-400-normal.2df2fde82be12ee3d411.woff",
+    "static/media/open-sans-latin-ext-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-latin-ext-400-normal.3399b9b51ad9e0310e9b.woff2",
+    "static/media/open-sans-latin-ext-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-latin-ext-400-normal.1fa987fc672e57951eb8.woff",
+    "static/media/open-sans-cyrillic-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-cyrillic-400-normal.e63f3335dabcaf300c0f.woff2",
+    "static/media/open-sans-greek-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-greek-400-normal.6eecb5759022fdcc7fc8.woff2",
+    "static/media/open-sans-cyrillic-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-cyrillic-400-normal.d84d64e2bdcfa09dcf6a.woff",
+    "static/media/open-sans-vietnamese-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-vietnamese-400-normal.87848962b44ea3a2785b.woff2",
+    "static/media/open-sans-hebrew-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-hebrew-400-normal.376e7092ac529a3bc1f5.woff2",
+    "static/media/open-sans-greek-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-greek-400-normal.1fb11bede3ea8757d897.woff",
+    "static/media/open-sans-vietnamese-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-vietnamese-400-normal.9271e3f644e0738b4bea.woff",
+    "static/media/open-sans-hebrew-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-hebrew-400-normal.09ea20d560d22f566570.woff",
+    "static/media/open-sans-greek-ext-400-normal.woff2": "/react-typescript-DDD-template/static/media/open-sans-greek-ext-400-normal.a385f5806ae1d9de1071.woff2",
+    "static/media/open-sans-greek-ext-400-normal.woff": "/react-typescript-DDD-template/static/media/open-sans-greek-ext-400-normal.07a23d8ea1b8917f4739.woff",
+    "index.html": "/react-typescript-DDD-template/index.html",
+    "main.615c04db.css.map": "/react-typescript-DDD-template/static/css/main.615c04db.css.map",
+    "main.d15557ae.js.map": "/react-typescript-DDD-template/static/js/main.d15557ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.615c04db.css",
+    "static/js/main.d15557ae.js"
+  ]
+}

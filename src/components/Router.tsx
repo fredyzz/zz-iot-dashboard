@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { privateRoutes, publicRoutes } from "routes";
 
-import { useAuthContext } from "../pages/auth/AuthContext";
+import { useAuthContext } from "../contexts/AuthContext";
 
 export function Router() {
 	const { currentUser, loading } = useAuthContext();

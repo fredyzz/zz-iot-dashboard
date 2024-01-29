@@ -21,7 +21,6 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
 		setCurrentUser(null);
 
 		return signOutUser();
-		/////// navigate('/')
 	};
 
 	const signIn = async (email: string, password: string) => {

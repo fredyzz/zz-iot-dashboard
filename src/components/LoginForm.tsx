@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { User } from "services/auth/types";
 
 import styles from "./LoginForm.module.scss";
 
@@ -20,7 +19,7 @@ export function LoginForm({
 	onSignInWithGoogle,
 }: {
 	error: string | null;
-	onSignInWithCredentials: (email: string, password: string) => Promise<User | null>;
+	onSignInWithCredentials: (email: string, password: string) => void;
 	onSignInWithGoogle?: () => Promise<void>;
 }) {
 	const [email, setEmail] = useState("");
@@ -41,7 +40,7 @@ export function LoginForm({
 		}
 
 		try {
-			void onSignInWithCredentials(email, password);
+			onSignInWithCredentials(email, password);
 		} catch (error) {
 			console.log(error); // eslint-disable-line no-console
 		}

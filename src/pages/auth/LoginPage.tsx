@@ -2,7 +2,7 @@ import { LoginForm } from "components/LoginForm";
 import { useEffect } from "react";
 
 import { useAuthContext } from "../../contexts/AuthContext";
-import styles from "./LoginPage.module.css";
+import styles from "./LoginPage.module.scss";
 
 export function LoginPage() {
 	const authContext = useAuthContext();

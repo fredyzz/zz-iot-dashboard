@@ -1,7 +1,7 @@
 import { Button, Center, Divider, Heading, Input } from "@chakra-ui/react";
 import { FaGoogle } from "react-icons/fa";
 
-import styles from "./LoginForm.module.css";
+import styles from "./LoginForm.module.scss";
 
 export function LoginForm() {
 	return (
